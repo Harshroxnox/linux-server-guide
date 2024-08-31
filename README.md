@@ -77,6 +77,10 @@ for http
 ```bash
 ufw allow 80
 ```
+for https 
+```bash
+ufw allow 443
+```
 
 
 
