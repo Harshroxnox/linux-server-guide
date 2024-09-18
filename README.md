@@ -66,6 +66,10 @@ ufw default deny incoming
 ```bash
 ufw allow ssh
 ```
+For Nginx server run 
+```bash
+ufw allow "Nginx Full"
+```
 ```bash
 ufw enable
 ```
