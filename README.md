@@ -236,3 +236,21 @@ ln -s /etc/nginx/sites-available/filename /etc/nginx/sites-enabled/filename
 ```bash
 systemctl restart nginx
 ```
+## `SSL Certification`
+```bash
+apt install certbot python3-certbot-nginx
+```
+
+Make sure that Nginx Full rule is available
+```bash
+ufw status
+```
+
+```bash
+certbot --nginx -d example.com -d www.example.com
+```
+
+Let’s Encrypt’s certificates are only valid for ninety days. To set a timer to validate automatically:
+```bash
+systemctl status certbot.timer
+```
