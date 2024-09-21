@@ -88,7 +88,7 @@ ufw allow 443
 ## `Python Virtual Env`
 suppose you have python3.10 then run
 ```bash
-apt install python3.10-virtualenv
+apt install python3.10-venv
 ```
 ```bash
 python3 -m venv venv
